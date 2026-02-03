@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeStream - Dark Theme Anime Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://img.icons8.com/color/96/000000/anime.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h1>Welcome to AnimeStream</h1>
+            <p>Explore your favorite anime in high quality.</p>
+        </section>
+
+        <section class="search-container">
+            <input type="text" id="searchInput" placeholder="Search anime by title or genre...">
+        </section>
+
+        <section class="categories" id="categoryButtons">
+            <button class="cat-btn active" data-category="All">All</button>
+            <button class="cat-btn" data-category="Action">Action</button>
+            <button class="cat-btn" data-category="Adventure">Adventure</button>
+            <button class="cat-btn" data-category="Romance">Romance</button>
+        </section>
+
+        <section class="anime-grid" id="animeListing">
+            <!-- Anime cards will be generated here dynamically -->
+        </section>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/router.js"></script>
+</body>
+</html>
