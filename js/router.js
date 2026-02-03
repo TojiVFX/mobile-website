@@ -23,28 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Dynamic rendering
+    // Dynamic rendering as per new requirements:
+    // Full thumbnail on top, then bold anime name, release year, duration, episode, language, description.
     detailsContainer.innerHTML = `
         <a href="index.html" class="back-btn">← Back to Home</a>
-        <div class="details-header">
-            <img src="${anime.thumbnail}" alt="${anime.title}">
-            <div class="details-title">
-                <h1>${anime.title}</h1>
-                <div class="details-meta">
-                    <span>${anime.year}</span>
-                    <span>${anime.duration}</span>
-                    <span>${anime.episodes}</span>
-                    <span>${anime.language}</span>
-                    <span>${anime.category}</span>
+        <div class="details-layout">
+            <div class="full-thumbnail">
+                <img src="${anime.thumbnail}" alt="${anime.title}">
+            </div>
+            <div class="info-section">
+                <h1 class="anime-name-bold">${anime.title}</h1>
+                <div class="meta-row">
+                    <span class="meta-item">${anime.year}</span>
+                    <span class="meta-item">${anime.duration}</span>
+                    <span class="meta-item">${anime.episodes}</span>
+                    <span class="meta-item">${anime.language}</span>
                 </div>
-                <div class="details-description">
+                <div class="genre-row">
+                    ${anime.genres.map(g => `<span class="genre-tag">${g}</span>`).join('')}
+                </div>
+                <div class="description-section">
                     <p>${anime.description}</p>
                 </div>
+
                 <div class="download-section">
-                    <h2>Download Links</h2>
-                    <div class="download-links">
-                        ${anime.downloads.map(link => `
-                            <a href="${link.url}" class="download-btn">Download ${link.label}</a>
+                    <h2>Downloads</h2>
+                    <div class="episode-list">
+                        ${anime.downloads.map(ep => `
+                            <a href="${ep.url}" class="ep-download-btn">${ep.label}</a>
                         `).join('')}
                     </div>
                 </div>

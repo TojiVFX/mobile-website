@@ -11,8 +11,8 @@ const animeData = [
     description: "Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture.",
     thumbnail: "https://images.unsplash.com/photo-1578632292335-df3abbb0d586?q=80&w=600&auto=format&fit=crop",
     downloads: [
-      { label: "720p", url: "#" },
-      { label: "1080p", url: "#" }
+      { label: "Full Movie 720p", url: "#" },
+      { label: "Full Movie 1080p", url: "#" }
     ]
   },
   {
@@ -25,10 +25,12 @@ const animeData = [
     category: "Action",
     language: "Japanese",
     description: "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
-    thumbnail: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?q=80&w=600&auto=format&fit=crop",
+    thumbnail: "https://i.ibb.co/Lzt9886h/IMG-20260130-120510-444.jpg",
     downloads: [
-      { label: "720p", url: "#" },
-      { label: "1080p", url: "#" }
+      { label: "Episode 1", url: "#" },
+      { label: "Episode 2", url: "#" },
+      { label: "Episode 3", url: "#" },
+      { label: "Episode 4", url: "#" }
     ]
   },
   {
@@ -43,8 +45,10 @@ const animeData = [
     description: "Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger. The famous mystery treasure named 'One Piece'.",
     thumbnail: "https://images.unsplash.com/photo-1560972550-aba3456b5564?q=80&w=600&auto=format&fit=crop",
     downloads: [
-      { label: "720p", url: "#" },
-      { label: "1080p", url: "#" }
+      { label: "Episode 1", url: "#" },
+      { label: "Episode 2", url: "#" },
+      { label: "Episode 3", url: "#" },
+      { label: "Episode 4", url: "#" }
     ]
   },
   {
@@ -59,8 +63,10 @@ const animeData = [
     description: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
     thumbnail: "https://images.unsplash.com/photo-1541562232579-512a21360020?q=80&w=600&auto=format&fit=crop",
     downloads: [
-      { label: "720p", url: "#" },
-      { label: "1080p", url: "#" }
+      { label: "Episode 1", url: "#" },
+      { label: "Episode 2", url: "#" },
+      { label: "Episode 3", url: "#" },
+      { label: "Episode 4", url: "#" }
     ]
   },
   {
@@ -75,8 +81,8 @@ const animeData = [
     description: "A high-school boy who has run away to Tokyo befriends a girl who appears to be able to manipulate the weather.",
     thumbnail: "https://images.unsplash.com/photo-1601850494422-3cf14624b0b3?q=80&w=600&auto=format&fit=crop",
     downloads: [
-      { label: "720p", url: "#" },
-      { label: "1080p", url: "#" }
+      { label: "Full Movie 720p", url: "#" },
+      { label: "Full Movie 1080p", url: "#" }
     ]
   }
 ];
